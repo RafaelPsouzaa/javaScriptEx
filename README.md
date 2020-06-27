@@ -1,0 +1,2 @@
+# javaScriptEx
+ exercicious javaScript
