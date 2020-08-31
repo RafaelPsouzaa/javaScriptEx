@@ -10,6 +10,20 @@ body{
     background-color:#dddddd;
     color: rgba(0, 0, 0,1);
    }
+   section#information{
+    border-bottom: 1px #606060 solid;
+    line-height: 5px;
+    margin-top: 20px;
+    
+   }
+   section#information p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #666262;
+ }
+ section#information h1{
+     line-height: 50px;
+     margin-top: 0px;
+ }
 div#interface{
     width: 1400px;
     background-color: #ffffff;
@@ -33,7 +47,7 @@ header#cabecalho img#icone{
 
 }
 header#cabecalho {
-    border-bottom: 1px #606060 solid;
+    
     height: 160px;
     /*background: url("../objetivo.png")no-repeat 0px 100px;*/
 }
@@ -123,6 +137,13 @@ section#corpo{
     border-right: 1px solid #606060;
     padding-right: 30px;
 }
+    article#mainNews h2{
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding:5px 0px 5px 0px ;
+        margin: 10px 0px 10px 0px;
+    }
 table#tabelaespec{
     border: 1px solid #606060;
     border-spacing: 0px;
