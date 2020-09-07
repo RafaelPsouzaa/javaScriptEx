@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excLampada</title>
+    <script>
+        function acendeLampada(){
+            document.getElementById("luz").src = "../projeto-glass-html5/lampada-acesa.jpg";
+            
+        }
+        function apagaLampada(){
+            document.getElementById("luz").src = "../projeto-glass-html5/lampada-apagada.jpg";
+        }
+
+    </script>
+</head>
+<body>
+    <h1>acenda lampâda </h1>
+    <img src="../projeto-glass-html5/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()"onmouseout="apagaLampada()"/>
+</body>
+</html>
