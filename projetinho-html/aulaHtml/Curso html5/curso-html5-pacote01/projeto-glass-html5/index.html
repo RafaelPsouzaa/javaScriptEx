@@ -6,6 +6,11 @@
     <title>site rafael</title>
    <link rel="stylesheet" href="_css/estilo.css"/>
 </head>
+<script>
+    function mudaFoto(foto){
+        document.getElementById("icone").src = foto;
+    }
+</script>
 <body>
 <div id = "interface">
         <header id="cabecalho">
@@ -21,7 +26,7 @@
 <nav id="menu">
 <h1> Menu Principal</h1>
 <ol type="1">
-<li><a href="index.html"> Home</a></li>
+<li onmouseover="mudafoto('/projeto-glass-html5/home.png')"><a href="index.html"> Home</a></li>
 <li> <a href="specs.html">Especificações</a></li>
 <li><a href="fotos.html"> Fotos</a></li>
 <li><a href="multimidia.html"> Multimídia</a></li>
