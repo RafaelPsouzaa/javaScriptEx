@@ -8,11 +8,11 @@ section#conteudo{
 }
 
 iframe#frame-spec{
-    width: 450px;
-    height: 280px;
+    width: 425px;
+    height: 200px;
     border: none;
     overflow: hidden;
 }
 iframe#frame-spec::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
