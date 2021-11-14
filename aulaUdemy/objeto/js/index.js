@@ -1,14 +1,13 @@
-let bus = {
-    wheels:8,
-    passengers:40,
-    door:2,
-    motor:['v8','220v','556cn']
+let arrayCheck = ['Rafael','Bryan','Edmundo','Gerusa','Reynan'];
 
+function seachInArray(vari){
+    for(i =0;i < arrayCheck;i++){
+        if(vari == arrayCheck){
+            console.log(`pesquisa encontrada${vari}`);
+        }else{
+            console.log('pesquisa nao encontrada');
+        }
+    }
+}
 
-    
-};
-delete bus.wheels;
-console.log(bus);
-bus.windows = 20;
-console.log(bus.motor[0]);
-console.log(bus);
+const foundArray = arrayCheck.find(nome=> nome.startsWith("R"))
