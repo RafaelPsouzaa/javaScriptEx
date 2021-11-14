@@ -7,8 +7,6 @@ let bus = {
 
     
 };
-delete bus.wheels;
-console.log(bus);
-bus.windows = 20;
+
+
 console.log(bus.motor[0]);
-console.log(bus);
