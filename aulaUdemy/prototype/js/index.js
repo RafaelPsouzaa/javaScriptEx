@@ -1,9 +1,4 @@
-function decremento(par){
-    for(let i = par;i >=0;i--){
-        if(i%2==0){
-            console.log(i);
-        }
-    }
+const pessoa = {
+    maos:2,
 }
-decremento(55);
-console.log(5);
+console.log(Object.getPrototypeOf(pessoa));
