@@ -9,4 +9,4 @@ let calc = {
         return n1*n2;
     }
 }
-console.log(calc.multiply(2,2));
+console.log(calc.somar(2,2));
