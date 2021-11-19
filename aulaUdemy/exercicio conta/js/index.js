@@ -6,11 +6,12 @@ class Conta {
         this.saldo += valor;
     }
     saque(saque){
-        this.saque -= this.deposito;
+        this.saldo -= saque;
     }
 
 }
 
 let bradesco = new Conta(500);
 bradesco.deposito(2000);
-console.log(bradesco);
+bradesco.saque(500);
+console.log(bradesco.saldo);
