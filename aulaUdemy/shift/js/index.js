@@ -1,6 +1,8 @@
-let carros = ["BMW","ferrari","maserati"]
+let carros = ["fiat","BMW","ferrari","maserati"]
 
-let remover = carros.shift();
+let rastrar = carros.shift();
 
-console.log(remover);
-console.log(carros);
+console.log(carros.includes("peugeot"));
+if(carros.includes("fiat")==true){
+    
+}
