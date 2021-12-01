@@ -6,13 +6,21 @@ class Carrinho{
 
     }
     addItem(item){
+        let contador = 0;
         for(let itemCarrinho in this.itens){
             if(this.itens[itemCarrinho].id == item.id){
                 this.itens[itemCarrinho].quant +=item.quant;
+                
+                contador =1;
             }
+           
+        }
+        if(contador == 0){
+            this.itens.push(item);
         }
         this.quant += item.quant;
-        this.valorTotal += item.preco;
+        this.valorTotal += item.preco * item.quant;
+
     }
 }
 
@@ -32,6 +40,6 @@ let carrinho = new  Carrinho ([
     }
 ],3,120);
 
-carrinho.addItem({id:01,nome:"Camisa",quant:02,preco:20});
-console.log(carrinho);
+carrinho.addItem({id:03,item:"bone",quant:1,preco:150});
 
+console.log(carrinho);
