@@ -22,6 +22,21 @@ class Carrinho{
         this.valorTotal += item.preco * item.quant;
 
     }
+    removeItem(item){
+        for(let itemCarrinho in this.itens){
+            if(this.itens[itemCarrinho].id == item.id){
+                let obj = this.itens[itemCarrinho];
+                let  index = this.itens.findIndex(function(obj){return obj.id == item.id});
+                this.itens.spice(index,0);
+
+                this.quant -= item.quant;
+                this.valorTotal -= item.preco * item.quant;
+                
+            }
+           
+        }
+      
+    }
 }
 
 
