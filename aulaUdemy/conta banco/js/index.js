@@ -11,10 +11,18 @@ class contaBancaria {
 
 
     }
+    withdraw(saque){
+        this.saldoCc -= saque;
+    }
+    get saldoAtual(){
+
+        return console.log(conta.saldoCc);
+    }
+    
 
 }
 
 let conta = new contaBancaria (6000,0,10);
-console.log(conta);
 conta.deposit(500);
-console.log(conta);
+conta.withdraw(1500);
+conta.saldoAtual
