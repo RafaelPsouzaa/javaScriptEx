@@ -18,11 +18,24 @@ class contaBancaria {
 
         return console.log(conta.saldoCc);
     }
+    get saldoCpAtual(){
+        return console.log(conta.saldoCp)
+    }
+    transfer(send){
+        if(send <=this.saldoCc){
+        this.saldoCp = send;
+        this.saldoCc -=send;
+        }else if(send > this.saldoCc){
+            console.log("saldo insuficiente")
+        }
+
+    }
     
 
 }
 
 let conta = new contaBancaria (6000,0,10);
-conta.deposit(500);
-conta.withdraw(1500);
-conta.saldoAtual
+
+conta.transfer(800);
+conta.saldoAtual;
+conta.saldoCpAtual;
