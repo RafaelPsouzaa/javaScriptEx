@@ -1,8 +1,10 @@
 class contaBancaria {
+
     constructor(saldoCc,saldoCp,juros){
         this.saldoCc = saldoCc;
         this.saldoCp = saldoCp;
         this.juros = juros;
+       
     }
     deposit(deposito){
         let saldo = this.saldoCc;
@@ -28,14 +30,23 @@ class contaBancaria {
         }else if(send > this.saldoCc){
             console.log("saldo insuficiente")
         }
-
     }
-    
+    jurosDeAniversario(){
+        let juros = (this.saldoCp * this.juros)/100;
+        this.saldoCp += juros;
+    }
+}
+
+class contaEspecial extends contaBancaria {
+    constructor(saldoCc,saldoCp,juros){
+        super(saldoCc,saldoCp,juros*2)
+    }
 
 }
 
-let conta = new contaBancaria (6000,0,10);
-
+let conta = new contaBancaria (6000,0);
+let conta2 = new contaEspecial(2000,10000,44)
 conta.transfer(800);
-conta.saldoAtual;
 conta.saldoCpAtual;
+console.log(conta2);
+
