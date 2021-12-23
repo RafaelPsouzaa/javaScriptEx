@@ -4,12 +4,12 @@ console.log(dregex.test("asd"));
 console.log(dregex.test(" "));
 console.log(dregex.test("123"));
 console.log(dregex.test("123asd"));
-const Dregex = /\D/;
+const regex2 = /\D/;
 console.log('D');
-console.log(dregex.test("asd"));
-console.log(dregex.test(" "));
-console.log(dregex.test("123"));
-console.log(dregex.test("123asd"));
+console.log(regex2.test("asd"));
+console.log(regex2.test(" "));
+console.log(regex2.test("123"));
+console.log(regex2.test("123asd"));
 
 const dia = /\d\d/;
 console.log("testes mais rigoros");
