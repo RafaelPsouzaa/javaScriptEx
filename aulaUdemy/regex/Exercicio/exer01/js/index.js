@@ -1,5 +1,6 @@
-const validarMaiuscula = /[A-Z]/;
+const validarMaiuscula = /[A-B]/;
 
-console.log(validarMaiuscula.test("VALIDANDO"));
-console.log(validarMaiuscula.test("validando"));
-console.log(validarMaiuscula.test("12345345"));
+console.log(validarMaiuscula.test("VALIDAR"));
+console.log(validarMaiuscula.test("validar"));
+console.log(validarMaiuscula.test("1234566"));
+
