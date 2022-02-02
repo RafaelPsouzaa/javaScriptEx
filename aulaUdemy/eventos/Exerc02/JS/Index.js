@@ -1,13 +1,9 @@
-let btn1 = document.querySelector("#btn01");
-let btn2 = document.querySelector("#btn02")
-console.log(btn);
-function msg(){
-    console.log("clicou em mim");
-}
+let btn01 = document.querySelector("#btn01");
+let btn02 = document.querySelector("#btn02")
 
-btn01.addEventListener("click",msg);
-
-btn02.addEventListener("click",()=>{
-    btn01.removeEventListener("click",msg);
+btn01.addEventListener("click",()=>{
+    console.log("clicou");
 });
+
+
 
