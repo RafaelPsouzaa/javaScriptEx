@@ -18,3 +18,7 @@ p.addEventListener("click",function(){
     console.log("clicou no paragrafo");
 });
 
+a.addEventListener("click",function(e){
+    e.preventDefault();
+    console.log("Nao Vai Mudar de Link");
+});
