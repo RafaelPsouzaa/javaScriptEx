@@ -1,9 +1,7 @@
-let input = document.querySelector("#input1");
+/*window.addEventListener("load",function(){
+    this.alert("carregamento da pagina");
+});*/
 
-input.addEventListener("focus",function(){
-    console.log("entrou no input");
-});
-
-input.addEventListener("blur",function(){
-    console.log("saiu do input");
+window.addEventListener("beforeunload",function(){
+    event.returnValue = null;
 });
