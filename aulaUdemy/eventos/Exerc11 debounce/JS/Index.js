@@ -1,3 +1,7 @@
+let timeout;
 window.addEventListener("mousemove",function(e){
-    console.log(e.x);
+    this.clearTimeout(timeout);
+        timeout = setTimeout(function(){
+             console.log(e.x);
+    },500);
 });
