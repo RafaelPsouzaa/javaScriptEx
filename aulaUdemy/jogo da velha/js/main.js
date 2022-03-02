@@ -6,4 +6,13 @@ let messageContainer = document.querySelectorAll("#message");
 let messageText = document.querySelector("#message p");
 let secondPlayer;
 
-//parou 1 min do video logica do jogo
+
+//contador
+let player1= 0;
+let player2 = 0;
+
+//adicionando o evento de click aos boxes
+
+for(let i=0; i <boxes.length;i++){
+    
+}
