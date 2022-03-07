@@ -25,6 +25,8 @@ for(let i=0; i <boxes.length;i++){
             //o
             el = o;
         }
+        let cloneEl = el.cloneNode(true);
+        this.appendChild(cloneEl);
     });
 
 }
