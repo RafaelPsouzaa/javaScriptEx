@@ -134,7 +134,7 @@ function checkWinCondition(){
         }
 
     }
-    //inclinado
+    //diagonal
     if(b1.childNodes.length > 0 && b5.childNodes.length > 0 && b9.childNodes.length > 0){
         let b1Child = b1.childNodes[0].className;
         let b5Child = b5.childNodes[0].className;
@@ -159,7 +159,17 @@ function checkWinCondition(){
         }
 
     }
-}
+    //deu velha
+let counter = 0;
 
+    for(let i =0;i <boxes.length;i++){
+        if(boxes[i].childNodes[0]!=undefined){
+            counter++;
+        }
+    }
+    if(counter == 9){
+        console.log('Deu Velha'); 
+    }
+}
 
 }
