@@ -31,7 +31,7 @@ for(let i=0; i <boxes.length;i++){
             
         }
         //checar quem venceu
-            checkWinCondition();
+        checkWinCondition();
 
 
         }
@@ -65,7 +65,7 @@ function checkWinCondition(){
         let b2Child = b2.childNodes[0].className;
         let b3Child = b3.childNodes[0].className;
 
-        if(b1Child == '' && b2Child == 'x' && b3Child == 'x'){
+        if(b1Child == 'x' && b2Child == 'x' && b3Child == 'x'){
             declareWinner('x');
         }else if(b1Child == 'o' && b2Child == 'o' && b3Child == 'o'){
             declareWinner('o');
@@ -181,12 +181,12 @@ function declareWinner(winner){
     
     if(winner == 'x'){
         scoreboardX.textContent = parseInt(scoreboardX.textContent) +1;
-        msg = "Player 1 win";
+        msg = 'Player 1 win';
     }else if(winner == 'o'){
         scoreboardO.textContent = parseInt(scoreboardO.textContent) +1;
-        msg = "Player 2 win";
+        msg = 'Player 2 win';
     }else {
-        msg = "deu Velha!";
+        msg = 'deu velha';
     }
     //exibe msg
     messageText.innerHTML = msg;
