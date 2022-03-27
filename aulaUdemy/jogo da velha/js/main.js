@@ -160,7 +160,7 @@ function checkWinCondition(){
 
     }
     //deu velha
-let counter = 0;
+    let counter = 0;
 
     for(let i =0;i <boxes.length;i++){
         if(boxes[i].childNodes[0]!=undefined){
@@ -191,5 +191,13 @@ function declareWinner(winner){
     //exibe msg
     messageText.innerHTML = msg;
     messageContainer.classList.remove("hide");
+    // zera as jogadas 
+    player1 = 0;
+    player2 = 0;
+    // remove x e o
+    let boxesToRemove = document.querySelectorAll(".box div");
+    for(let i = 0;< boxesToRemove.length; i++){
+        boxesToRemove[i].parentNode.removeChild(boxesToRemove[i]);
+    }
     
 }
