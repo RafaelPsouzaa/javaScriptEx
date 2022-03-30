@@ -35,10 +35,14 @@ for(let i=0; i <boxes.length;i++){
 
 
         }
-        //terminou
+      
     });
-//ver quem vai jogar
-function checkEl(player1,player2){
+
+
+    }
+
+    //ver quem vai jogar
+    function checkEl(player1,player2){
     if(player1 == player2){
         //x
         el = x;
@@ -47,9 +51,9 @@ function checkEl(player1,player2){
         el = o;
     }
     return el;
-}
-//ve quem ganhou
-function checkWinCondition(){
+    }
+    //ve quem ganhou
+        function checkWinCondition(){
     let b1 = document.getElementById("block-1");
     let b2 = document.getElementById("block-2");
     let b3 = document.getElementById("block-3");
@@ -172,7 +176,7 @@ function checkWinCondition(){
     }
 }
 
-}
+
 //limpa o jogo,declara o vencedor e atualiza o placar 
 function declareWinner(winner){
     let scoreboardX = document.querySelector('#scoreboard-1');
@@ -196,7 +200,7 @@ function declareWinner(winner){
     player2 = 0;
     // remove x e o
     let boxesToRemove = document.querySelectorAll(".box div");
-    for(let i = 0;< boxesToRemove.length; i++){
+    for(let i = 0;i< boxesToRemove.length; i++){
         boxesToRemove[i].parentNode.removeChild(boxesToRemove[i]);
     }
     
