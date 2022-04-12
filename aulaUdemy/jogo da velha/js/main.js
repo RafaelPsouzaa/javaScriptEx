@@ -231,9 +231,9 @@ function declareWinner(winner){
     }
     
 }
-//executar logica da cpu
-computerPlayer(){
 
+//executar logica da cpu
+    function computerPlayer(){
     let cloneO = o.cloneNode(true);
     counter =0;
     filled = 0;
@@ -248,7 +248,7 @@ computerPlayer(){
                 break;
             }
             //checagem de quantas foram preeenchidas 
-        }else{
+        }   else{
             filled++;
         }
     }
@@ -256,6 +256,6 @@ computerPlayer(){
     if(counter == 0 && filled < 9){
         computerPlayer();
 
-            }
+        }
 
 }
