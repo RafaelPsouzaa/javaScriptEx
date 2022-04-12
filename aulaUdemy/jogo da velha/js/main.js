@@ -60,8 +60,8 @@ for(let i=0; i <boxes.length;i++){
                 setTimeout(function(){
                     let container = document.querySelector("#container");
                     container.classList.remove("hide");
-                });
-            },500);
+                },500);
+            });
 
 
 
@@ -231,6 +231,7 @@ function declareWinner(winner){
     }
     
 }
+
 
 //executar logica da cpu
     function computerPlayer(){
