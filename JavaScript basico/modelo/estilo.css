@@ -3,6 +3,9 @@ body{
     font: 15pt Arial;
 
 }
+div{
+    margin: 5px;
+}
 header{
 text-align: center;
 }
