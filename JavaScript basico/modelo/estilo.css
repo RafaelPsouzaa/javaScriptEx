@@ -1,10 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background: rgb(107,107,241);
     font: 15pt Arial;
 
-}
-div{
-    margin: 5px;
 }
 header{
 text-align: center;
