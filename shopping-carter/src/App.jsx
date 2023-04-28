@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/HEADER/HEADER.JSX';
+import Header from './components/HEADER/Header.jsx';
 
 
 function App() {
   return (
     <div >
-      <
+      <Header/>
     </div> 
   );   
 }

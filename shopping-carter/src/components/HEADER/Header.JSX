@@ -1,8 +1,7 @@
 import React from 'react';
-
 function Header() {
     return(
-        <header>HEADER</header>
+        <header>Header</header>
     );
 }
 
