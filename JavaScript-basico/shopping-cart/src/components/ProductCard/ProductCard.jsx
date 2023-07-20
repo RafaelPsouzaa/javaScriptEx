@@ -23,7 +23,7 @@ function ProductCard({data}) {
     </section>
   );
 }
-//https://www.youtube.com/watch?v=Jb2-AqKI1s8&t=3s&ab_channel=ManualdoDev
+//https://www.youtube.com/watch?v=PbnaIlnOsr8&t=574s&ab_channel=ManualdoDev
 export default ProductCard;
 
 ProductCard.propTypes = {

@@ -1,12 +1,21 @@
 import React,{useState} from 'react';
 import {TbSearch} from 'react-icons/tb';
 import './SeachBar.css';
+import fetchProducts from '../../api/fetchProducts';
+
 
 function SeachBar(){
 
   const [seachValue,setSeachValue] = useState('');
+  const handleSeach = async (event)=>{
+    event.preventDefault();
+    const products = await fetchProducts(seachValue);
+    setSeachValue('');
+    console.log(products);
+
+  };
   return(
-    <form className='seach-bar'>
+    <form className='seach-bar' onSubmit={handleSeach}>
       <input type="search"
         value={seachValue}
         placeholder='Buscar Produto' 

@@ -11,13 +11,13 @@ function Products() {
 
     fetchProducts('iphone').then((response) => {
       setProducts(response);
-      setLoading(true);
+      setLoading(false);
     });//the then getting the fetchProducts response
    
   },[]);
   console.log(products);
   return ( 
-    (loading ?<Loading  />:<section className="products container">
+    (loading &&<Loading  />) || (<section className="products container">
       {products.map((product) =>  <ProductCard key={product.id} data ={product}/>)}
     </section>)
     
