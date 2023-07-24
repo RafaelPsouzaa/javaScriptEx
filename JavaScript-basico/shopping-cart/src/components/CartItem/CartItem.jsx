@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsFillCartPlusFill } from 'react-icons/bs';
 function CartItem() {
   return ( 
     <section className='cart-item'>
@@ -7,7 +8,9 @@ function CartItem() {
         <h3 className='cart-item-title'>Titulo do produto</h3>
         <h3 className='cart-item-Price'>R$ 123,00</h3>
 
-        <button type='button' className='button__remove-item'> </button>
+        <button type='button' className='button__remove-item'>
+          <BsFillCartPlusFill />
+        </button>
       </div>
 
     </section>
