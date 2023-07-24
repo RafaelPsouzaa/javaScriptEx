@@ -3,10 +3,14 @@ import propTypes  from 'prop-types';
 import AppContext from './AppContext';
 
 function Provider({ children }) {
-  const [name, setName] = useState('manual do Dev');
+  const [products, setProducts] = useState([]);
+  const [loading,setLoading] = useState(true);
   const value = {
-    name,
-    setName
+    products, 
+    setProducts,
+    loading,
+    setLoading,
+    
   };
   return ( 
     <AppContext.Provider value={value}>
@@ -19,3 +23,4 @@ export default Provider;
 Provider.propTypes = {
   children: propTypes.any,
 }.isRequired;
+// https://www.youtube.com/watch?v=PbnaIlnOsr8&t=1408s&ab_channel=ManualdoDev
