@@ -4,6 +4,7 @@ const colors ={
     padrao:'#616161',
     span:'#993399',
     body:'#25b6da',
+   
     get(tag){
         return this[tag] ? this[tag] : this.padrao
     }
