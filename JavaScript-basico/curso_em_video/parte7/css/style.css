@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(60, 144, 240);
+    font: 15px;
+    
+    
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    }
+    select#flist{
+        width:170px;
+    }
+    .screen{
+        margin-top: 10px;
+    }
+    .screen{
+        margin-top: 10px;
+    }
+
+footer{
+  text-align: center;
+  font-style: italic;
+  color: aliceblue;
+  }
