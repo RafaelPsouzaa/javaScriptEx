@@ -7,6 +7,7 @@ import formatCurrency from '../useful/formatCurrency';
 
 function ProductCard({data}) {
   const {title,thumbnail,price} = data;
+
   return ( 
     <section className='product-card'>
       <img src= {thumbnail.replace(/\w\.jpg/gi,'W.jpg')}
