@@ -4,12 +4,15 @@ import AppContext from './AppContext';
 
 function Provider({ children }) {
   const [products, setProducts] = useState([]);
+  const [CartItem, setCartItem] = useState([]);
   const [loading,setLoading] = useState(true);
   const value = {
     products, 
     setProducts,
     loading,
     setLoading,
+    CartItem,
+    setCartItem
     
   };
   return ( 
