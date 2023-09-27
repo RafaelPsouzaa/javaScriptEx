@@ -4,12 +4,7 @@ import '../CartItem/CartItem.css';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 // import formatCurrency from '../useful/formatCurrency';
 function CartItem({data}) {
-  const{thumbnail , title , price} = data;
-  
-function CartItem({data}) {
   const {thumbnail,title,price} = data;
-
-
 
   return ( 
     <section className='cart-item'>
@@ -28,7 +23,7 @@ function CartItem({data}) {
 }
 
 export default CartItem;
-
 CartItem.propTypes = {
   data:propTypes.object
 }.isRequired;
+
